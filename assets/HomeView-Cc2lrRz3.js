@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as o,o as c}from"./index-C5ysapi9.js";const r={};function t(n,s){return c(),o("h1",null,"Home")}const m=e(r,[["render",t]]);export{m as default};
