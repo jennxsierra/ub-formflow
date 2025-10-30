@@ -21,4 +21,4 @@ usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.titl
   </footer>
 </template>
 
-<style scoped></style>
+<style src="./styles/globals.css"></style>

@@ -4,4 +4,4 @@
   <h1>Home</h1>
 </template>
 
-<style scoped></style>
+<style scoped src="@/styles/test.css"></style>
