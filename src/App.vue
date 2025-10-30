@@ -1,11 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { usePageTitle } from '@/composables/usePageTitle'
+usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.title
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header class="app-header">
+    <h1>UB FormFlow</h1>
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+  </header>
+
+  <main class="app-main">
+    <RouterView />
+  </main>
+
+  <footer class="app-footer">
+    <p>© 2025 UB FormFlow</p>
+  </footer>
 </template>
 
 <style scoped></style>
