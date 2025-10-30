@@ -12,20 +12,20 @@ export const teamMembers: TeamMember[] = [
     name: 'Andres H.',
     role: 'Project Coordinator',
     tagLine: 'Part-time kangaroo',
-    photoUrl: 'favicon.ico',
+    photoUrl: 'images/team/raccoon-theater.png',
   },
   {
     id: 2,
     name: 'Jennessa S.',
     role: 'Designer & Coder',
     tagLine: 'Gamer',
-    photoUrl: 'favicon.ico',
+    photoUrl: 'images/team/raccoon-theater.png',
   },
   {
     id: 3,
     name: 'Tysha D.',
     role: 'UX Designer',
     tagLine: 'Novel Enthusiast',
-    photoUrl: 'favicon.ico',
+    photoUrl: 'images/team/raccoon-theater.png',
   },
 ]
