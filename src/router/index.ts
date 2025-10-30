@@ -8,10 +8,10 @@ const routes = [
     meta: { title: 'UB FormFlow' },
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('@/views/AboutView.vue'),
-    meta: { title: 'About | UB FormFlow' },
+    path: '/design-and-development',
+    name: 'Design & Development',
+    component: () => import('@/views/DesignDevelopmentView.vue'),
+    meta: { title: 'Design & Development | UB FormFlow' },
   },
 ]
 
@@ -20,7 +20,6 @@ const router = createRouter({
   routes,
 })
 
-// set document.title after each navigation
 router.afterEach((to) => {
   const meta = to.meta as { title?: string }
   document.title = meta.title ?? 'UB FormFlow'

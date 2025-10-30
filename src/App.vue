@@ -8,7 +8,7 @@ usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.titl
     <h1>UB FormFlow</h1>
     <nav>
       <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/design-and-development">Design & Development</RouterLink>
     </nav>
   </header>
 
