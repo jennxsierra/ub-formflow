@@ -5,7 +5,16 @@ usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.titl
 
 <template>
   <header class="app-header">
-    <h1>UB FormFlow</h1>
+    <div class="header-logo-group">
+      <img
+        src="/images/logo/ub-formflow-logo-100x100.svg"
+        alt="UB FormFlow Logo"
+        class="site-logo"
+      />
+      <div class="header-title-group">
+        <h1>UB FormFlow</h1>
+      </div>
+    </div>
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/design-and-development">Design & Development</RouterLink>
@@ -22,3 +31,10 @@ usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.titl
 </template>
 
 <style src="./styles/globals.css"></style>
+<style src="./styles/header.css"></style>
+<style src="./styles/buttons.css"></style>
+<style src="./styles/hero.css"></style>
+<style src="./styles/sections.css"></style>
+<style src="./styles/team.css"></style>
+<style src="./styles/phases.css"></style>
+<style src="./styles/media.css"></style>

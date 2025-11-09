@@ -1,0 +1,48 @@
+/* Media blocks */
+/* Video embed */
+.video-container {
+  margin-bottom: 1.5rem;
+}
+
+.video-embed {
+  position: relative;
+  width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(60, 24, 102, 0.08);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-embed iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Image embed */
+.image-container {
+  margin-bottom: 1.5rem;
+}
+
+.image-embed {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(60, 24, 102, 0.08);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-embed img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

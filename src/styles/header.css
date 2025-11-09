@@ -1,0 +1,17 @@
+/* App Header Layout */
+.header-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-title-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.header-title-group h1 {
+  font-size: 1.75rem;
+  margin: 0;
+}

@@ -1,0 +1,78 @@
+/* Phases / Cards */
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.phase-header h1 {
+  margin: 0;
+  color: var(--ub-purple);
+}
+
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.phase-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(60, 24, 102, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.phase-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.phase-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phase-badge {
+  background: var(--ub-gold);
+  color: #2b1a3a;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.phase-card h3 {
+  margin: 0;
+  color: var(--ub-purple);
+}
+
+.phase-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.phase-links {
+  margin-top: auto;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.link-chip {
+  background: #f3f2f8;
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--ub-purple);
+  text-decoration: none;
+}

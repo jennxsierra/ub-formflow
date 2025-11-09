@@ -1,0 +1,34 @@
+/* Team */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(60, 24, 102, 0.06);
+  text-align: center;
+}
+
+.team-member img {
+  width: 86px;
+  height: 86px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.team-member h3 {
+  margin: 0.25rem 0 0.25rem 0;
+  font-size: 1.05rem;
+  color: var(--ub-purple);
+}
+
+.team-member .role {
+  color: var(--muted);
+  font-size: 0.9rem;
+}

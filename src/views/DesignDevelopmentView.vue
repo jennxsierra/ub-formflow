@@ -3,29 +3,41 @@ import { projectPhases } from '@/data/phases'
 </script>
 
 <template>
-  <h1>Design & Development</h1>
-  <div v-for="phase in projectPhases" :key="phase.id">
-    <img :src="phase.image" :alt="phase.name" />
-    <h2>
-      <span>{{ phase.id }}</span> {{ phase.name }}
-    </h2>
-    <div>{{ phase.code }}</div>
-    <p>{{ phase.description }}</p>
+  <div class="container">
+    <header class="phase-header">
+      <h1>Design & Development</h1>
+      <div class="muted">Project phases, reports and presentations</div>
+    </header>
 
-    <div v-if="phase.report">
-      <a :href="phase.report" target="_blank">Report PDF</a>
-    </div>
+    <section class="phase-grid">
+      <article v-for="phase in projectPhases" :key="phase.id" class="phase-card">
+        <img :src="phase.image" :alt="phase.name" />
+        <div class="phase-card-info">
+          <div>
+            <div class="phase-badge">Phase {{ phase.id }}</div>
+          </div>
+          <div class="phase-meta">{{ phase.code }}</div>
+        </div>
+        <h3>{{ phase.name }}</h3>
+        <p class="muted">{{ phase.description }}</p>
 
-    <div v-if="phase.presentation">
-      <a :href="phase.presentation" target="_blank">Presentation</a>
-    </div>
-
-    <div v-if="phase.externalLinks">
-      <div v-for="link in phase.externalLinks" :key="link.url">
-        <a :href="link.url" target="_blank">{{ link.name }}</a>
-      </div>
-    </div>
+        <div class="phase-links">
+          <a v-if="phase.report" :href="phase.report" target="_blank" class="link-chip">Report</a>
+          <a v-if="phase.presentation" :href="phase.presentation" target="_blank" class="link-chip"
+            >Presentation</a
+          >
+          <a
+            v-for="link in phase.externalLinks || []"
+            :key="link.url"
+            :href="link.url"
+            target="_blank"
+            class="link-chip"
+            >{{ link.name }}</a
+          >
+        </div>
+      </article>
+    </section>
   </div>
 </template>
 
-<style scoped></style>
+<!-- styling handled in modular CSS files imported in App.vue -->
