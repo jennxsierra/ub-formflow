@@ -7,10 +7,13 @@
 }
 
 .team-member {
-  background: var(--card-bg);
+  background: linear-gradient(180deg, rgba(75, 31, 122, 0.06), transparent);
   padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(60, 24, 102, 0.06);
+  border-radius: 12px;
+  box-shadow:
+    0 10px 32px -8px rgba(60, 24, 102, 0.18),
+    0 4px 10px rgba(60, 24, 102, 0.1);
+  backdrop-filter: blur(2px);
   text-align: center;
 }
 
@@ -29,6 +32,43 @@
 }
 
 .team-member .role {
-  color: var(--muted);
+  color: #ce8900;
   font-size: 0.9rem;
+}
+
+.team-member .social-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team-member .social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.team-member .social-link:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}
+
+.team-member .social-link:active {
+  transform: translateY(0);
+}
+
+.team-member .social-link .icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* Visible focus for keyboard users */
+.team-member .social-link:focus-visible {
+  outline: 2px dashed var(--ub-purple);
+  outline-offset: 3px;
 }

@@ -100,6 +100,23 @@ import { RouterLink } from 'vue-router'
               <h3>{{ member.name }}</h3>
               <div class="role">{{ member.role }}</div>
               <p class="muted">{{ member.tagLine }}</p>
+              <div class="social-links">
+                <a
+                  :href="member.github"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  :aria-label="`GitHub profile for ${member.name}`"
+                >
+                  <img
+                    src="/images/team/github-mark.svg"
+                    alt="GitHub"
+                    class="icon icon-github"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

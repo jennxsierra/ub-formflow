@@ -4,6 +4,7 @@ export interface TeamMember {
   role: string
   tagLine: string
   photoUrl: string
+  github?: string
 }
 
 export const teamMembers: TeamMember[] = [
@@ -13,6 +14,7 @@ export const teamMembers: TeamMember[] = [
     role: 'Project Coordinator',
     tagLine: 'Part-time Kangaroo',
     photoUrl: 'images/team/andres.png',
+    github: 'https://github.com/andreshungbz',
   },
   {
     id: 2,
@@ -20,6 +22,7 @@ export const teamMembers: TeamMember[] = [
     role: 'Designer & Coder',
     tagLine: 'Epic Gamer',
     photoUrl: 'images/team/jenn.png',
+    github: 'https://github.com/jennxsierra',
   },
   {
     id: 3,
@@ -27,5 +30,6 @@ export const teamMembers: TeamMember[] = [
     role: 'UX Designer',
     tagLine: 'Novel Enthusiast',
     photoUrl: 'images/team/tysha.jpg',
+    github: 'https://github.com/aoideee',
   },
 ]
