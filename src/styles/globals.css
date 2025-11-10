@@ -70,14 +70,15 @@ body {
   gap: 1rem;
 }
 .app-header a {
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.92);
   text-decoration: none;
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
   font-weight: 600;
 }
-.app-header a.router-link-exact-active,
-.app-header a:hover {
+.app-header nav a.router-link-exact-active,
+.app-header nav a:hover {
   background: rgba(0, 0, 0, 0.15);
 }
 

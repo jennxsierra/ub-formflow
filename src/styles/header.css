@@ -15,3 +15,76 @@
   font-size: 1.75rem;
   margin: 0;
 }
+
+/* Accessible screen-reader only text (used in toggle) */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Mobile navigation */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: white;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  line-height: 0;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: currentColor;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Transform bars to X when open */
+.app-header.nav-open .menu-toggle .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.app-header.nav-open .menu-toggle .bar:nth-child(2) { opacity: 0; }
+.app-header.nav-open .menu-toggle .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* Responsive layout adjustments */
+@media (max-width: 680px) {
+  .app-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .app-header nav {
+    flex-basis: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding-top: 0.65rem;
+  }
+
+  .app-header nav a {
+    padding: 0.55rem 0.7rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+  }
+
+  .app-header nav.open {
+    display: flex;
+  }
+}

@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { usePageTitle } from '@/composables/usePageTitle'
+import { ref } from 'vue'
 usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.title
+
+// Mobile navigation state
+const navOpen = ref(false)
+const toggleNav = () => (navOpen.value = !navOpen.value)
 </script>
 
 <template>
-  <header class="app-header">
+  <header class="app-header" :class="{ 'nav-open': navOpen }">
     <RouterLink to="/">
       <div class="header-logo-group">
         <img
@@ -17,7 +22,14 @@ usePageTitle('UB FormFlow') // keeps document.title in sync with route.meta.titl
         </div>
       </div>
     </RouterLink>
-    <nav>
+    <!-- Mobile menu toggle -->
+    <button class="menu-toggle" @click="toggleNav" aria-label="Toggle navigation" :aria-expanded="navOpen" aria-controls="primary-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="sr-only">Menu</span>
+    </button>
+    <nav id="primary-nav" :class="{ open: navOpen }">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/design-and-development">Design & Development</RouterLink>
     </nav>
