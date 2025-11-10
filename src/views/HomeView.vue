@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router'
 
 <template>
   <div class="container">
-    <!-- Combined Hero: Video + Overview + STEM Fair Notice -->
+    <!-- Section 1: Hero -->
     <section class="hero">
       <!-- Left: Video -->
       <div class="hero-media">
@@ -34,10 +34,22 @@ import { RouterLink } from 'vue-router'
             Join us to experience the future of form management at the University of Belize.
           </p>
           <div class="notice-links">
-            <a href="/" class="link-chip">Prototype</a>
-            <a href="/" class="link-chip">Poster</a>
-            <a href="/" class="link-chip">Pitch Slide</a>
-            <a href="/" class="link-chip">README</a>
+            <a
+              href="https://ub-formflow-medium-fi.figma.site/"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Prototype</a
+            >
+            <a href="/" class="link-chip" target="_blank" rel="noopener noreferrer">Poster</a>
+            <a href="/" class="link-chip" target="_blank" rel="noopener noreferrer">Pitch Slide</a>
+            <a
+              href="documents/readmes/CMPS3141-SPP6-25S1-README.pdf"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
           </div>
         </div>
       </div>

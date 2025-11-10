@@ -23,7 +23,13 @@ const toggleNav = () => (navOpen.value = !navOpen.value)
       </div>
     </RouterLink>
     <!-- Mobile menu toggle -->
-    <button class="menu-toggle" @click="toggleNav" aria-label="Toggle navigation" :aria-expanded="navOpen" aria-controls="primary-nav">
+    <button
+      class="menu-toggle"
+      @click="toggleNav"
+      aria-label="Toggle navigation"
+      :aria-expanded="navOpen"
+      aria-controls="primary-nav"
+    >
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>

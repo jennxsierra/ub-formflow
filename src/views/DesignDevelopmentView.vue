@@ -39,5 +39,3 @@ import { projectPhases } from '@/data/phases'
     </section>
   </div>
 </template>
-
-<!-- styling handled in modular CSS files imported in App.vue -->

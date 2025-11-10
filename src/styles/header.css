@@ -40,7 +40,9 @@
   cursor: pointer;
   position: relative;
   line-height: 0;
-  transition: background 0.2s ease, border-color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .menu-toggle .bar {
@@ -50,13 +52,21 @@
   background: currentColor;
   margin: 4px 0;
   border-radius: 2px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 /* Transform bars to X when open */
-.app-header.nav-open .menu-toggle .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.app-header.nav-open .menu-toggle .bar:nth-child(2) { opacity: 0; }
-.app-header.nav-open .menu-toggle .bar:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.app-header.nav-open .menu-toggle .bar:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.app-header.nav-open .menu-toggle .bar:nth-child(2) {
+  opacity: 0;
+}
+.app-header.nav-open .menu-toggle .bar:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
 /* Responsive layout adjustments */
 @media (max-width: 680px) {
