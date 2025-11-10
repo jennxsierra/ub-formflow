@@ -33,7 +33,7 @@ export const projectPhases: ProjectPhase[] = [
   },
   {
     id: 3,
-    name: 'Website',
+    name: 'Portfolio Website',
     code: 'CMPS3141-SPP3-25S1',
     description: 'Professional website showcasing the project.',
     image: 'images/phases/03-github.png',
@@ -69,8 +69,8 @@ export const projectPhases: ProjectPhase[] = [
     image: 'images/phases/06-progress.png',
     presentation: 'documents/presentations/CMPS3141-SPP6-25S1-P.pdf',
     externalLinks: [
-      { name: 'README', url: 'documents/readmes/CMPS3141-SPP6-25S1-README.pdf' },
       { name: 'Prototype', url: 'https://ub-formflow-medium-fi.figma.site/' },
+      { name: 'README', url: 'documents/readmes/CMPS3141-SPP6-25S1-README.pdf' },
     ],
   },
   {
