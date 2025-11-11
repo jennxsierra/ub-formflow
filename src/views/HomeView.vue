@@ -41,8 +41,20 @@ import { RouterLink } from 'vue-router'
               rel="noopener noreferrer"
               >Prototype</a
             >
-            <a href="/" class="link-chip" target="_blank" rel="noopener noreferrer">Poster</a>
-            <a href="/" class="link-chip" target="_blank" rel="noopener noreferrer">Pitch Slide</a>
+            <a
+              href="documents/display/CMPS3141-SPP8-25S1-POSTER.png"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Poster</a
+            >
+            <a
+              href="documents/display/CMPS3141-SPP8-25S1-SLIDE.png"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Pitch Slide</a
+            >
             <a
               href="documents/readmes/CMPS3141-SPP6-25S1-README.pdf"
               class="link-chip"
