@@ -92,10 +92,10 @@ export const projectPhases: ProjectPhase[] = [
     code: 'CMPS3141-SPP8-25S1',
     description:
       'Pitch slide and informative poster, showcased at the FST STEM Fair 2025 (November 13, 2025).',
-    image: 'images/phases/07-soon.jpg',
+    image: 'images/phases/08-pitch-slide.png',
     externalLinks: [
-      { name: 'Poster', url: 'images/team/raccoon-theater.png' },
-      { name: 'Pitch Slide', url: 'images/team/raccoon-theater.png' },
+      { name: 'Poster', url: 'documents/display/CMPS3141-SPP8-25S1-POSTER.png' },
+      { name: 'Pitch Slide', url: 'documents/display/CMPS3141-SPP8-25S1-SLIDE.png' },
     ],
   },
 ]
