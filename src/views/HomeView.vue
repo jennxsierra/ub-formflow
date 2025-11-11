@@ -42,6 +42,20 @@ import { RouterLink } from 'vue-router'
               >Prototype</a
             >
             <a
+              href="documents/presentations/CMPS3141-SPP6-25S1-P.pdf"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Presentation</a
+            >
+            <a
+              href="documents/readmes/CMPS3141-SPP6-25S1-README.pdf"
+              class="link-chip"
+              target="_blank"
+              rel="noopener noreferrer"
+              >README</a
+            >
+            <a
               href="documents/display/CMPS3141-SPP8-25S1-POSTER.png"
               class="link-chip"
               target="_blank"
@@ -54,13 +68,6 @@ import { RouterLink } from 'vue-router'
               target="_blank"
               rel="noopener noreferrer"
               >Pitch Slide</a
-            >
-            <a
-              href="documents/readmes/CMPS3141-SPP6-25S1-README.pdf"
-              class="link-chip"
-              target="_blank"
-              rel="noopener noreferrer"
-              >README</a
             >
           </div>
         </div>
