@@ -21,7 +21,7 @@ import { RouterLink } from 'vue-router'
       <!-- Right: Overview + Notice -->
       <div>
         <h1>UB FormFlow</h1>
-        <h2>Form Management: Reimagined</h2>
+        <h2>Your forms. On-time. Hassle-free.</h2>
         <p>
           UB FormFlow is an interactive online interface that reimagines the form process for
           students at the University of Belize. Submit, track, and receive updates on your
