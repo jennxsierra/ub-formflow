@@ -75,16 +75,19 @@ export const projectPhases: ProjectPhase[] = [
   },
   {
     id: 7,
-    name: 'Interactive Hi-Fi Prototype (Coming Soon!)',
+    name: 'Interactive Hi-Fi Prototype',
     code: 'CMPS3141-SPP6-25S1',
     description: 'Final revised prototype implementing the three main tasks prototyped.',
-    image: 'images/phases/07-soon.jpg',
-    // report: 'documents/reports/CMPS3141-SPP7-25S1-R.pdf',
-    // presentation: 'documents/presentations/CMPS3141-SPP7-25S1-P.pdf',
-    // externalLinks: [
-    //   { name: 'README', url: '#' },
-    //   { name: 'Prototype', url: '#' },
-    // ],
+    image: 'images/phases/07-hifi.png',
+    report: 'documents/reports/CMPS3141-SPP7-25S1-R.pdf',
+    presentation: 'documents/presentations/CMPS3141-SPP7-25S1-P.pdf',
+    externalLinks: [
+      {
+        name: 'README',
+        url: 'https://github.com/andreshungbz/ub-formflow-hifi/blob/main/README.md',
+      },
+      { name: 'Prototype', url: 'https://ub-formflow-hifi.vercel.app/' },
+    ],
   },
   {
     id: 8,

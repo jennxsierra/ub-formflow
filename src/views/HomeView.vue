@@ -28,46 +28,40 @@ import { RouterLink } from 'vue-router'
           administrative forms with confidence and clarity.
         </p>
         <div class="hero-notice">
-          <h3 class="section-subheader">Try our Medium-Fidelity Prototype!</h3>
+          <h3 class="section-subheader">Try our High-Fidelity Prototype!</h3>
           <p>
-            We're excited to showcase our medium-fidelity prototype at the upcoming FST STEM Fair.
-            Join us to experience the future of form management at the University of Belize.
+            As our design journey for the CMPS3141 Human Computer Interface course comes to a close,
+            visit our hi-fi prototype for Phase 7. It features corrections made after heuristic
+            evaluation at the FST STEM Fair.
           </p>
           <div class="notice-links">
             <a
-              href="https://ub-formflow-medium-fi.figma.site/"
+              href="https://ub-formflow-hifi.vercel.app/"
               class="link-chip"
               target="_blank"
               rel="noopener noreferrer"
               >Prototype</a
             >
             <a
-              href="documents/presentations/CMPS3141-SPP6-25S1-P.pdf"
-              class="link-chip"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Presentation</a
-            >
-            <a
-              href="documents/readmes/CMPS3141-SPP6-25S1-README.pdf"
+              href="https://github.com/andreshungbz/ub-formflow-hifi/blob/main/README.md"
               class="link-chip"
               target="_blank"
               rel="noopener noreferrer"
               >README</a
             >
             <a
-              href="documents/display/CMPS3141-SPP8-25S1-POSTER.png"
+              href="documents/reports/CMPS3141-SPP7-25S1-R.pdf"
               class="link-chip"
               target="_blank"
               rel="noopener noreferrer"
-              >Poster</a
+              >Report</a
             >
             <a
-              href="documents/display/CMPS3141-SPP8-25S1-SLIDE.png"
+              href="documents/presentations/CMPS3141-SPP7-25S1-P.pdf"
               class="link-chip"
               target="_blank"
               rel="noopener noreferrer"
-              >Pitch Slide</a
+              >Presentation</a
             >
           </div>
         </div>
