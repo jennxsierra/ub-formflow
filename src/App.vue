@@ -46,7 +46,7 @@ const toggleNav = () => (navOpen.value = !navOpen.value)
   </main>
 
   <footer class="app-footer">
-    <p>© 2025 UB FormFlow</p>
+    <p>© 2025 UB FormFlow & CodeCraft Solutions</p>
   </footer>
 </template>
 
